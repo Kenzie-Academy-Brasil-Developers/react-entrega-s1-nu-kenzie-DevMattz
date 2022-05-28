@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: baseline;
   height: 6rem;
+  margin-top: 2rem;
 }
 
 .lista-botao {
@@ -93,5 +94,11 @@
   .lista-cabecalho {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 380px) {
+  .lista-cabecalho,
+  .img {
+    margin-top: 8rem;
   }
 }
