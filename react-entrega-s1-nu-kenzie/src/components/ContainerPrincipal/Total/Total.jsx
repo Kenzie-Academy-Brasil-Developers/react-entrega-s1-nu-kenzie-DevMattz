@@ -1,5 +1,6 @@
 import './style.css'
-const Total = () =>{
+const Total = ({listTransactions}) =>{
+
   return (
     <div className='containerTotal'>
       <div className="textos">
@@ -8,7 +9,7 @@ const Total = () =>{
       </div>
 
       <div className='valor'>
-        <h2>R$ 8456</h2>
+        <h2>R$ {listTransactions.reduce((acc, {value})=> acc + value, 0)}</h2>
       </div>
     </div>
   )

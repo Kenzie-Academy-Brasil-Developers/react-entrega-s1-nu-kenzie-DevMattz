@@ -18,12 +18,17 @@
   border: 1.4px solid #e9ecef;
   border-radius: 0.8rem;
   margin-right: 1.5rem;
-  font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
   text-align: center;
   color: #5b6166;
   cursor: pointer;
+}
+
+.img {
+  height: 40rem;
+  width: 45rem;
+  overflow: hidden;
 }
 
 .lista-botao:hover {
@@ -66,8 +71,14 @@
     flex-direction: row;
   }
   .listaContainer {
-    margin-top: 5rem;
+    margin-top: 4rem;
     max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
   }
 }
 

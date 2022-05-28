@@ -31,6 +31,8 @@ input[type='text'] {
   border: 2px solid #f8f9fa;
   border-radius: 8px;
   margin-top: 1.2rem;
+  outline: none;
+  border: none;
 }
 
 input[type='text']::placeholder {
@@ -120,4 +122,8 @@ small {
   font-size: 1.4rem;
   color: #ffffff;
   cursor: pointer;
+}
+
+.buttonForm:hover {
+  background: #e21a60;
 }

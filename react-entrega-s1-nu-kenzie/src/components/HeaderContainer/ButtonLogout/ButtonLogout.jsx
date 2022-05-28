@@ -1,8 +1,11 @@
 import './style.css'
 
-const ButtonLogout = () =>{
+const ButtonLogout = ({setClick}) =>{
+  
+  const handleClick = () => setClick(true)
+  
   return(
-    <button className='button'>Inicio</button>
+    <button onClick={handleClick} className='button'>Inicio</button>
   )
 }
 export default ButtonLogout
