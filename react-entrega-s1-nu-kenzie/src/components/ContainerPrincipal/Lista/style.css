@@ -41,7 +41,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fd3778;
+  background: #27ae60;
   width: 5px;
   border-radius: 10px;
 }
@@ -54,22 +54,28 @@
 @media (max-width: 835px) {
   .listaContainer {
     width: 30rem;
+    overflow: hidden;
   }
 
   .lista-cabecalho {
     flex-direction: column;
     align-items: center;
   }
+  .img {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 630px) {
   .listaContainer,
   .lista-cabecalho {
-    width: 100%;
+    width: 90%;
   }
 
   .lista-cabecalho {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .listaContainer {
     margin-top: 4rem;

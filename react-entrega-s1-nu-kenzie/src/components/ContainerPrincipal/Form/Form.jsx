@@ -11,7 +11,7 @@ const Form = ({listTransactions, setListTransactions, setEmpty, setFilterTransac
   const handleListTransaction = (e) => {
     e.preventDefault()
 
-    if(description && value && typeOption !== ''){
+    if(description && value && typeOption !== '' && description !== 'Tipo'){
      
       if(typeOption === 'Despesa'){
         const LIST = {
@@ -74,7 +74,6 @@ const Form = ({listTransactions, setListTransactions, setEmpty, setFilterTransac
            name="escolha"
            onChange={event => setTypeOption(event.target.value)}
            >
-            <option >Tipo</option>
             <option>Entrada</option>
             <option>Despesa</option>
           </select>

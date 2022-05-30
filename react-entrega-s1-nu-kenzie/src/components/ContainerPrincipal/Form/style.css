@@ -127,3 +127,18 @@ small {
 .buttonForm:hover {
   background: #e21a60;
 }
+
+@media (max-width: 630px) {
+  .buttonForm {
+    width: 90%;
+    margin-left: 6%;
+  }
+  input[type='text'] {
+    width: 90%;
+    margin-left: 5%;
+  }
+  small,
+  label {
+    margin-left: 6%;
+  }
+}
